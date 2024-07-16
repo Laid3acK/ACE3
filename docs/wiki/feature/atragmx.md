@@ -72,7 +72,7 @@ Horus ATragMX software considers atmospheric conditions, gun data, ammunition, r
     - `Inclination Angle`: *The degrees field is marked with a “d” and the cosine field with a “c”.* [Horus manual p.33]
     - `Target Speed`: *Target Speed Assist* [Horus manual p.21]
     - `Target Range (meters)`: *Parameter Limits minimum and maximum values: 25 - 3700 meters.* [Horus manual p.17]
-- Apply vertical (Page Up and Down keys as default) and horizontal (Left Ctrl + Page Up and Down keys as default) elevations to the [scope]({{ site.baseurl }}/wiki/feature/scopes.html).
+- Apply vertical (Page Up and Down keys as default) and horizontal (Left Ctrl + Page Up and Down keys as default) elevations to the [Scope]({{ site.baseurl }}/wiki/feature/scopes.html).
 - Hold Breath (Left Shift as default) and Fire (Prim. Mouse. Btn. as default).
 
 ### 3.3 Example with Truing tool
@@ -136,7 +136,10 @@ Horus ATragMX software considers atmospheric conditions, gun data, ammunition, r
 
 > configfile >> "CfgAmmo" >> "**bullet Class Name**" >> "ACE_dragModel"
 
+> configfile >> "CfgAmmo" >> "**bullet Class Name**" >> "ACE_standardAtmosphere"
+
 - *The AtragMx accepts only **G1 ballistic coefficient**.*
+- *ICAO Standard Atmosphere as default with `Add New Gun`, an ASM BC can be converted to ICAO with this [ACE3 Tool]({{ site.ace.githubUrl }}/blob/master/addons/advanced_ballistics/functions/fnc_calculateAtmosphericCorrection.sqf).*
 - *G7 ballistic coefficient can be converted, for example, with the online [JBM Ballistics Calculators](http://www.jbmballistics.com/cgi-bin/jbmgf-5.1.cgi)*.
 - Check `Elev` = 0 with `ZR` = `TR` *(if not, open `Gun` column and `Done`)*.
 - Optionally, `Save Gun` and `Done` in the `GunList`.
@@ -212,7 +215,7 @@ Horus ATragMX software considers atmospheric conditions, gun data, ammunition, r
     - `Inclination Angle`: *The degrees field is marked with a “d” and the cosine field with a “c”.* [Horus manual p.33]
     - `Target Speed`: *Target Speed Assist* [Horus manual p.21]
     - `Target Range (meters)`: *Parameter Limits minimum and maximum values: 25 - 3700 meters.* [Horus manual p.17]
-- Apply vertical (Page Up and Down keys as default) and horizontal (Left Ctrl + Page Up and Down keys as default) elevations to the [scope]({{ site.baseurl }}/wiki/feature/scopes.html).
+- Apply vertical (Page Up and Down keys as default) and horizontal (Left Ctrl + Page Up and Down keys as default) elevations to the [Scope]({{ site.baseurl }}/wiki/feature/scopes.html).
 - Hold Breath (Left Shift as default) and Fire (Prim. Mouse. Btn. as default).
 
 
